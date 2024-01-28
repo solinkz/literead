@@ -1026,6 +1026,7 @@ span.gradient{
        flex-direction: column;
        align-items: center;
        gap: 2rem;
+       text-align: center;
     }
 
 }
