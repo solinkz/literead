@@ -237,21 +237,34 @@ p{
     display: none;
     background: none;
     border: none;
+    position: absolute;
+    top: 2rem;
+    right: 0;
 }
 
 /* Header Responsive Styles */
 @media (max-width: 768px) {
+
+    .header .container {
+        height: auto;
+        flex-direction: column;
+        align-items: start;
+    }
+ 
+
     .navigation {
         /* Hide navigation on mobile by default */
         display: none;
         flex-direction: column;
+        align-items: start;
         width: 100%;
-        text-align: center;
+        gap: 1rem;
+        margin-top: 2rem;
+        /* text-align: center; */
     }
 
     .navigation a {
         padding: 0.75rem 0;
-        border-bottom: 1px solid #ddd;
     }
 
     .mobile-nav-toggle {

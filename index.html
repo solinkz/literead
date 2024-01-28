@@ -16,12 +16,6 @@
                 <div class="logo">
                     <img src="img/logo.svg" alt="">
                 </div>
-                <nav class="navigation">
-                    <a href="/books">Browse books</a>
-                    <a href="/community">Community</a>
-                    <a href="/cart">Your cart</a>
-                    <a href="/signin" class="btn btn-sm btn-accent">Sign in</a>
-                </nav>
                 <button class="mobile-nav-toggle" aria-controls="navigation" aria-expanded="false">
                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M3 4H21" stroke="#141714" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -30,6 +24,12 @@
                     </svg>
                         
                 </button>
+                <nav class="navigation">
+                    <a href="/books">Browse books</a>
+                    <a href="/community">Community</a>
+                    <a href="/cart">Your cart</a>
+                    <a href="/signin" class="btn btn-sm btn-accent">Sign in</a>
+                </nav>
             </div>
         </header>
 
@@ -742,5 +742,20 @@
         </div>
 
     </div>
+    
 </body>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const navToggle = document.querySelector('.mobile-nav-toggle');
+        const nav = document.querySelector('.navigation');
+
+        navToggle.addEventListener('click', function() {
+            const expanded = this.getAttribute('aria-expanded') === 'true' || false;
+            navToggle.setAttribute('aria-expanded', !expanded);
+            nav.setAttribute('aria-expanded', !expanded);
+        });
+    });
+
+</script>
 </html>
