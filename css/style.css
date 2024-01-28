@@ -743,12 +743,21 @@ span.gradient{
         padding: 2rem 0;
     }
     .collection-grid{
-        align-items: center;
+        place-items: center;
     }
-    .collection-heading .heading{
-        margin-bottom: 1rem;
+    .collection-heading{
+        margin-bottom: 4rem;
         color: var(--text-heading);
+        text-align: center;
     }
+    /* .collection .item-detail{
+        display: flex;
+        flex-direction: column;
+    }
+    .collection .author, 
+    .collection .rating-block{
+       align-self: center;
+    } */
     
 }
 
