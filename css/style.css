@@ -947,9 +947,14 @@ span.gradient{
 .promo-wrapper{
     display: flex;
     justify-content: space-between;
+    align-items: center;
     padding: 4rem;
     background-color: var(--surface-dark);
     border-radius: 1rem;
+    gap: 3rem;
+}
+.promo-description{
+    flex: 1;
 }
 
 .promo-description h4{
